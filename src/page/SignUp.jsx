@@ -32,7 +32,7 @@ function SignUp() {
 
     const handleSignUp = async () => {
         try {
-            const response = await axios.post("https://paytm-basic-backend.vercel.app/api/v1/user/signup", {
+            const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
                 username: email,
                 firstname,
                 lastname,
