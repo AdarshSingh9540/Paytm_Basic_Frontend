@@ -9,7 +9,7 @@ export const Users = () => {
     const [filter, setFilter] = useState("");
    
     useEffect(() => {
-        axios.get(`http://localhost:3000/api/v1/user/bulk`)
+        axios.get(`https://paytm-basic-backend.vercel.app/api/v1/user/bulk`)
             .then(response => {
                 setUsers(response?.data?.user || []);
             })

@@ -13,7 +13,7 @@ export const SendMoney = () => {
 
     const initiateTransfer = () => {
         setLoading(true);
-        axios.post("http://localhost:3000/api/v1/account/transfer", {
+        axios.post("https://paytm-basic-backend.vercel.app/api/v1/account/transfer", {
             to: id,
             amount
         }, {

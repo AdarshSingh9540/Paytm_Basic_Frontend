@@ -9,7 +9,7 @@ function Dashboard() {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/v1/user/bulk`)
+    axios.get(`https://paytm-basic-backend.vercel.app/api/v1/user/bulk`)
       .then(response => {
         setUserData(response.data.user);
         console.log(response);
