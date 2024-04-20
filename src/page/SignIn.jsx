@@ -54,7 +54,7 @@ function SignIn() {
                     />
                     <div className='pt-4'>
                         <Button onClick={handleSignIn} label={"Sign In"} />
-                        <ButtonWarning label={"Don't have an account ?"} buttonText={"Sign up"} to={"/signup"} />
+                        <ButtonWarning label={"Don't have an account ?"} buttonText={"Sign up"} to={"/"} />
                     </div>
                 </div>
             </div>
